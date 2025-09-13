@@ -9,7 +9,7 @@ public class ListaMulheres {
         System.out.println("Digite nome-sexo (F ou M), exemplo: Maria-F. Linha vazia para terminar:");
         while (true) {
             String linha = scanner.nextLine().trim();
-            if (linha.isEmpty()) break; // linha vazia encerra leitura
+            if (linha.isEmpty()) break;
 
             String[] partes = linha.split("-");
             if (partes.length != 2) {
@@ -34,7 +34,7 @@ public class ListaMulheres {
 
 class Pessoa {
     private String nome;
-    private String sexo; // "M" ou "F"
+    private String sexo; 
 
     public Pessoa(String nome, String sexo) {
         this.nome = nome;
